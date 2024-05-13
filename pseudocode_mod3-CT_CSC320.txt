@@ -1,0 +1,34 @@
+Start
+	Declarations
+		double grossWeeklyIncome
+		double taxRate
+		double weeklytaxWithholding
+		double netWeeklyIncome
+		
+	OUTPUT "Please enter a weekly income: "
+	USERINPUT → grossWeeklyIncome
+	
+	if (grossWeeklyIncome < 500) then
+		taxRate = 10
+		
+		else-if (grossWeeklyIncome) AND (grossWeeklyIncome < 1500) then
+			taxRate = 15
+		endElse-if
+		
+		else-if (grossWeeklyIncome >= 1500) AND (grossWeeklyIncome < 2500) then
+			taxRate = 20
+		endElse-if
+		
+		else
+			taxRate = 30
+		endElse
+	endIf
+	
+	weeklyTaxWithholding = grossWeeklyIncome * taxRate
+	netWeeklyIncome = grossWeeklyIncome - weeklyTaxWithholding
+	
+	OUTPUT "Weekly Gross Income: " + grossWeeklyIncome
+	OUTPUT "Tax Rate: " + taxRate
+	OUTPUT "Weekly Tax Withholding: " + weeklytaxWithholding
+	OUTPUT "Weekly Net Income: " + netWeeklyIncome	
+End

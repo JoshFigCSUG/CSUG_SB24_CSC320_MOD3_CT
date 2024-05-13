@@ -1,11 +1,8 @@
-package com.CalculateAverageWithholding;
-
 import java.util.Scanner;
 
 public class CalculateAverageWithholding {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	public static void main(String[] args) {		
 		double grossWeeklyIncome;
 		double taxRate;
 		double weeklyTaxWithholding;
